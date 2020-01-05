@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gerador de Senhas</title>
-  <script src="js/script.js"></script>
+  
 </head>
 <body>
   <p>Digite o tamanho da senha (Entre 4 e 22):</p>
   <input type="number" min="4" max="22" id="tamanho">
-  <button onclick="geradorDeSenha()">Gerar</button>
+  <button id ="myBtn" onclick="geradorDeSenha()">Gerar</button>
   <p>Senha:</p>
   <p id="result"></p>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
