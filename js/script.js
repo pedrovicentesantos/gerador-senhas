@@ -1,7 +1,7 @@
 let input = document.getElementById("tamanho")
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-   event.preventDefault()
+input.addEventListener("keydown", function(event) {
+  if (event.code === "Enter") {
+  //  event.preventDefault()
    document.getElementById("myBtn").click()
   }
 })
