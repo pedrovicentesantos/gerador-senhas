@@ -96,10 +96,11 @@ function criarSenha(tamanho=8){
 function geradorDeSenha(){
     let tamanhoSenha = document.getElementById("tamanho").value;
     if (tamanhoSenha.length === 0 || parseInt(tamanhoSenha) > 22 || parseInt(tamanhoSenha) < 4){
-        // console.log('nao pode')
+        document.getElementById('mensagem').innerHTML = "Tamanho para senha inválido. Gerando uma senha default de tamanho 8."
         criarSenha()
     }
     else{
+        document.getElementById('mensagem').innerHTML = ""
         criarSenha(parseInt(tamanhoSenha))
     }
 }
